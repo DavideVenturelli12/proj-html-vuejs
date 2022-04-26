@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <HeaderComponent />
+    <HeaderComponent :nav="nav" />
     <MainComponent />
     <FooterComponent />
   </div>
@@ -18,8 +18,22 @@ export default {
     MainComponent,
     FooterComponent,
   },
+  data() {
+    return {
+      nav: [
+        "Home",
+        "Apple",
+        "Microsoft",
+        "Android",
+        "Forums",
+        "Contact us",
+        "Join us",
+      ],
+    };
+  },
 };
 </script>
 
 <style lang="scss">
+@import "@/style/general";
 </style>
