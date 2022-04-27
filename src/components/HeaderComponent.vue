@@ -78,7 +78,7 @@ export default {
   }
 }
 #jumbotron {
-  padding: 10% 15%;
+  padding: 15% 15%;
   color: white;
   background-image: url(../assets/home_slider_bg.jpg);
   background-position: center;

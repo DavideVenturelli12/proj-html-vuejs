@@ -4,3 +4,23 @@
     margin: 0;
     font-family: sans-serif;
 }
+
+/* larghezza scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* binario scrollbar */
+::-webkit-scrollbar-track {
+    background: lightgrey;
+}
+
+/* presa scrollbar */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* colore scrollbar all'hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

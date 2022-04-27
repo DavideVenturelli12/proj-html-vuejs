@@ -2,7 +2,7 @@
   <div id="app">
     <HeaderComponent :nav="nav" />
     <MainComponent />
-    <FooterComponent />
+    <FooterComponent :footerInfo="footerInfo" />
   </div>
 </template>
 
@@ -29,6 +29,26 @@ export default {
         "Contact us",
         "Join us",
       ],
+      footerInfo: [
+        {
+          voice: "POPULAR TOPICS",
+          option1: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+          option2: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+          option3: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+        },
+        {
+          voice: "RECENT TOPICS",
+          option1: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+          option2: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+          option3: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+        },
+        {
+          voice: "LATEST REPLIES",
+          option1: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+          option2: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+          option3: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+        },
+      ],
     };
   },
 };
@@ -36,7 +56,4 @@ export default {
 
 <style lang="scss">
 @import "@/style/general";
-.dv-container {
-  padding: 0;
-}
 </style>
