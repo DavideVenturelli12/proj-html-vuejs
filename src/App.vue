@@ -36,4 +36,7 @@ export default {
 
 <style lang="scss">
 @import "@/style/general";
+.dv-container {
+  padding: 0;
+}
 </style>
