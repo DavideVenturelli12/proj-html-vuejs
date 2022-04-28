@@ -97,6 +97,9 @@ export default {
         line-height: 25px;
         color: black;
       }
+      a:hover {
+        text-decoration: underline;
+      }
     }
   }
 }

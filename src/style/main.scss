@@ -1,0 +1,299 @@
+.description-section {
+    text-align: center;
+    padding: 100px 25%;
+    color: gray;
+    background-color: hsl(0deg 0% 95%);
+
+    h3 {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+.title-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 15% 60px;
+
+    h3 {
+        font-size: 14px;
+        margin-bottom: 30px;
+        color: gray;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+}
+
+.news-section {
+    padding: 0 15% 60px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .news {
+        width: calc(100% / 3);
+        padding: 0 10px;
+
+        img {
+            width: 100%;
+        }
+
+        h4 {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        p {
+            font-size: 12px;
+            font-weight: 600;
+            color: gray;
+            line-height: 25px;
+        }
+
+        .preview {
+            margin-top: 10px;
+        }
+    }
+}
+
+.featured-article {
+    margin: 0 15% 60px;
+    padding: 15% 5% 5%;
+    color: white;
+    background-image: url(../assets/featured_article_1_bg.jpg);
+    background-position: center;
+    background-size: cover;
+
+    h3 {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 25px;
+        margin-bottom: 30px;
+    }
+
+    button {
+        background-color: black;
+        padding: 15px 20px;
+        border: 0;
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    button:active {
+        transform: scale(0.9);
+    }
+}
+
+.tutorial-section {
+    margin: 0 15% 60px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .reviewed-product {
+        width: calc(100% / 3 * 2);
+        padding: 7%;
+        color: white;
+        background-image: url(../assets/featured_article_2_bg.jpg);
+        background-position: center;
+        background-size: cover;
+
+        h3 {
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 25px;
+            margin-bottom: 30px;
+        }
+
+        button {
+            background-color: black;
+            padding: 15px 20px;
+            border: 0;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        button:active {
+            transform: scale(0.9);
+        }
+    }
+
+    .tutorial {
+        width: calc(100% / 3);
+        padding-left: 20px;
+
+        .guides {
+            display: flex;
+            margin-top: 25px;
+
+            img {
+                width: calc(100% / 2);
+                padding-right: 10px;
+            }
+
+            h4 {
+                font-size: 12px;
+            }
+
+            p {
+                font-size: 10px;
+                font-weight: 600;
+                color: gray;
+                line-height: 25px;
+            }
+
+            .preview {
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+#go-to {
+    padding: 60px 0;
+    text-align: center;
+    background-color: black;
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+    }
+
+    a:hover {
+        color: black;
+        background-color: white;
+        padding: 15px 20px;
+    }
+}
+
+.forum-section {
+    padding: 60px 15% 0;
+    background-color: hsl(0deg 0% 95%);
+}
+
+.forum-link {
+    padding: 0 15% 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: hsl(0deg 0% 95%);
+
+    div {
+        width: 280px;
+        text-align: center;
+        padding: 40px 0 60px;
+        margin-bottom: 40px;
+        border-top: 2px solid hsl(188deg 67% 46%);
+        background-color: white;
+
+        .icon {
+            height: 60px;
+            width: 60px;
+            text-align: center;
+            line-height: 60px;
+            vertical-align: middle;
+            border-radius: 50%;
+            color: white;
+            background-color: hsl(17deg 100% 69%);
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            color: hsl(17deg 100% 69%);
+        }
+    }
+}
+
+.sign-up {
+    padding: 100px 30%;
+    color: white;
+    text-align: center;
+    background-image: url(../assets/join_now_cta_bg.jpg);
+    background-position: center;
+    background-size: cover;
+
+    h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    button {
+        background-color: hsl(188deg 67% 45%);
+        padding: 15px 20px;
+        border: 0;
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    button:active {
+        transform: scale(0.9);
+    }
+}
+
+.newsletter {
+    background-color: hsl(0deg 0% 95%);
+    padding: 100px 30%;
+    text-align: center;
+
+    input {
+        border: 0;
+        width: 350px;
+        margin-right: 20px;
+        padding: 15px 5px;
+        margin-top: 20px;
+    }
+
+    button {
+        border: 0;
+        padding: 15px 50px;
+        font-weight: 600;
+        color: white;
+        cursor: pointer;
+        background-color: black;
+    }
+
+    button:active {
+        transform: scale(0.9);
+    }
+}
+
+.bar {
+    border-top: 2px solid orangered;
+    width: 100px;
+    margin-top: 25px;
+}
