@@ -92,7 +92,7 @@ export default {
   }
   button {
     background-color: hsl(188deg 67% 45%);
-    padding: 10px 20px;
+    padding: 15px 20px;
     border: 0;
     color: white;
     font-weight: 600;

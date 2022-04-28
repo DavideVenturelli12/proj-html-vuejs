@@ -10,7 +10,7 @@
           reiciendis.
         </p>
       </div>
-      <div id="footer-info" v-for="item in footerInfo" :key="item">
+      <div id="footer-info" v-for="(item, index) in footerInfo" :key="index">
         <ul>
           <li>
             <h3>{{ item.voice }}</h3>
@@ -21,7 +21,10 @@
               <a href="#">{{ item.option2 }}</a>
             </p>
             <p>
-              <a href="#">{{ item.option2 }}</a>
+              <a href="#">{{ item.option3 }}</a>
+            </p>
+            <p>
+              <a href="#">{{ item.option4 }}</a>
             </p>
           </li>
         </ul>
