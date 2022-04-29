@@ -2,10 +2,10 @@
   <header>
     <!--Navbar-->
     <div class="nav-section">
-      <img src="../assets/logo.png" alt="logo" />
+      <img src="../assets/img/logo.png" alt="logo" />
       <div class="nav-links">
         <ul>
-          <li v-for="item in nav" :key="item">
+          <li v-for="item in data" :key="item">
             <a href="#">{{ item }}</a>
           </li>
         </ul>
@@ -22,11 +22,18 @@
 </template>
 
 <script>
+import data from "../assets/data/headerData.js";
+
 export default {
   name: "HeaderComponent",
-  props: {
-    nav: Array,
+  data() {
+    return {
+      data,
+    };
   },
+  /*props: {
+    nav: Array,
+  },*/
 };
 </script>
 
@@ -80,7 +87,7 @@ export default {
 #jumbotron {
   padding: 15% 15%;
   color: white;
-  background-image: url(../assets/home_slider_bg.jpg);
+  background-image: url(../assets/img/home_slider_bg.jpg);
   background-position: center;
   background-size: cover;
   h1 {

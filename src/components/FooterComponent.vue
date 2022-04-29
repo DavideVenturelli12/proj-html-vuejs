@@ -1,6 +1,7 @@
 <template>
   <footer>
     <div class="top-footer">
+      <!--descrizione footer-->
       <div id="footer-description">
         <h3>AVADA THECH FORUM</h3>
         <p>
@@ -10,7 +11,8 @@
           reiciendis.
         </p>
       </div>
-      <div id="footer-info" v-for="(item, index) in footerInfo" :key="index">
+      <!--sezione info footer-->
+      <div id="footer-info" v-for="(item, index) in data" :key="index">
         <ul>
           <li>
             <h3>{{ item.voice }}</h3>
@@ -30,6 +32,7 @@
         </ul>
       </div>
     </div>
+    <!--sezione copyright w social-->
     <div class="bottom-footer">
       <div id="copyright-social">
         <div>
@@ -52,11 +55,18 @@
 </template>
 
 <script>
+import data from "../assets/data/footerData.js";
+
 export default {
   name: "FooterComponent",
-  props: {
-    footerInfo: Array,
+  data() {
+    return {
+      data,
+    };
   },
+  /*props: {
+    footerInfo: Array,
+  },*/
 };
 </script>
 

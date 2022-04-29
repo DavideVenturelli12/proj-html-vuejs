@@ -67,7 +67,7 @@
     margin: 0 15% 60px;
     padding: 15% 5% 5%;
     color: white;
-    background-image: url(../assets/featured_article_1_bg.jpg);
+    background-image: url(../assets/img/featured_article_1_bg.jpg);
     background-position: center;
     background-size: cover;
 
@@ -110,7 +110,7 @@
         width: calc(100% / 3 * 2);
         padding: 7%;
         color: white;
-        background-image: url(../assets/featured_article_2_bg.jpg);
+        background-image: url(../assets/img/featured_article_2_bg.jpg);
         background-position: center;
         background-size: cover;
 
@@ -213,7 +213,7 @@
         border-top: 2px solid hsl(188deg 67% 46%);
         background-color: white;
 
-        .icon {
+        #icon {
             height: 60px;
             width: 60px;
             text-align: center;
@@ -241,7 +241,7 @@
     padding: 100px 30%;
     color: white;
     text-align: center;
-    background-image: url(../assets/join_now_cta_bg.jpg);
+    background-image: url(../assets/img/join_now_cta_bg.jpg);
     background-position: center;
     background-size: cover;
 

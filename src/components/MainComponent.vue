@@ -18,38 +18,13 @@
     </div>
     <!--prima Sezione news-->
     <div class="news-section">
-      <div class="news">
-        <img src="../assets/post_feat_img_25-320x202.jpg" alt="image" />
-        <h4>Morbi vitae dui euismod vulputate sollicitudin</h4>
-        <p>October 11th,2015 | <strong>2 comments</strong></p>
-        <p class="preview">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum
-          dolorum veritatis veniam, quaerat sint tenetur quis, vero ducimus, nam
-          molestias cumque ex. Mollitia debitis nobis rem, alias eum enim.
-          Voluptate.
+      <div class="news" v-for="(item, index) in news1" :key="index">
+        <img :src="item.img" :alt="item.image" />
+        <h4>{{ item.title }}</h4>
+        <p>
+          {{ item.date }}<strong>{{ item.comments }}</strong>
         </p>
-      </div>
-      <div class="news">
-        <img src="../assets/post_feat_img_24-320x202.jpg" alt="image" />
-        <h4>Morbi vitae dui euismod vulputate sollicitudin</h4>
-        <p>October 11th,2015 | <strong>2 comments</strong></p>
-        <p class="preview">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum
-          dolorum veritatis veniam, quaerat sint tenetur quis, vero ducimus, nam
-          molestias cumque ex. Mollitia debitis nobis rem, alias eum enim.
-          Voluptate.
-        </p>
-      </div>
-      <div class="news">
-        <img src="../assets/post_feat_img_23-320x202.jpg" alt="image" />
-        <h4>Morbi vitae dui euismod vulputate sollicitudin</h4>
-        <p>October 11th,2015 | <strong>2 comments</strong></p>
-        <p class="preview">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum
-          dolorum veritatis veniam, quaerat sint tenetur quis, vero ducimus, nam
-          molestias cumque ex. Mollitia debitis nobis rem, alias eum enim.
-          Voluptate.
-        </p>
+        <p class="preview">{{ item.preview }}</p>
       </div>
     </div>
     <!--sezione fetured article-->
@@ -66,38 +41,13 @@
     </div>
     <!--seconda sezione news-->
     <div class="news-section">
-      <div class="news">
-        <img src="../assets/post_feat_img_22-320x202.jpg" alt="image" />
-        <h4>Morbi vitae dui euismod vulputate sollicitudin</h4>
-        <p>October 11th,2015 | <strong>2 comments</strong></p>
-        <p class="preview">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum
-          dolorum veritatis veniam, quaerat sint tenetur quis, vero ducimus, nam
-          molestias cumque ex. Mollitia debitis nobis rem, alias eum enim.
-          Voluptate.
+      <div class="news" v-for="(item, index) in news2" :key="index">
+        <img :src="item.img" :alt="item.image" />
+        <h4>{{ item.title }}</h4>
+        <p>
+          {{ item.date }}<strong>{{ item.comments }}</strong>
         </p>
-      </div>
-      <div class="news">
-        <img src="../assets/post_feat_img_21-320x202.jpg" alt="image" />
-        <h4>Morbi vitae dui euismod vulputate sollicitudin</h4>
-        <p>October 11th,2015 | <strong>2 comments</strong></p>
-        <p class="preview">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum
-          dolorum veritatis veniam, quaerat sint tenetur quis, vero ducimus, nam
-          molestias cumque ex. Mollitia debitis nobis rem, alias eum enim.
-          Voluptate.
-        </p>
-      </div>
-      <div class="news">
-        <img src="../assets/post_feat_img_20-320x202.jpg" alt="image" />
-        <h4>Morbi vitae dui euismod vulputate sollicitudin</h4>
-        <p>October 11th,2015 | <strong>2 comments</strong></p>
-        <p class="preview">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum
-          dolorum veritatis veniam, quaerat sint tenetur quis, vero ducimus, nam
-          molestias cumque ex. Mollitia debitis nobis rem, alias eum enim.
-          Voluptate.
-        </p>
+        <p class="preview">{{ item.preview }}</p>
       </div>
     </div>
     <!--Sezione tutorial e guide-->
@@ -119,25 +69,13 @@
           <div class="bar"></div>
         </div>
         <div>
-          <div class="guides">
-            <img src="../assets/post_feat_img_23-320x202.jpg" alt="image" />
+          <div class="guides" v-for="(item, index) in tutorial" :key="index">
+            <img :src="item.img" :alt="item.image" />
             <div>
-              <h4>Morbi vitae dui euismod vulputate sollicitudin</h4>
-              <p>October 11th,2015 | <strong>comments off</strong></p>
-            </div>
-          </div>
-          <div class="guides">
-            <img src="../assets/post_feat_img_22-320x202.jpg" alt="image" />
-            <div>
-              <h4>Morbi vitae dui euismod vulputate sollicitudin</h4>
-              <p>October 11th,2015 | <strong>comments off</strong></p>
-            </div>
-          </div>
-          <div class="guides">
-            <img src="../assets/post_feat_img_20-320x202.jpg" alt="image" />
-            <div>
-              <h4>Morbi vitae dui euismod vulputate sollicitudin</h4>
-              <p>October 11th,2015 | <strong>comments off</strong></p>
+              <h4>{{ item.title }}</h4>
+              <p>
+                {{ item.date }}<strong>{{ item.commnets }}</strong>
+              </p>
             </div>
           </div>
         </div>
@@ -160,52 +98,10 @@
       </div>
     </div>
     <div class="forum-link">
-      <div>
-        <i class="fa-solid fa-file-lines icon"></i>
+      <div v-for="(item, index) in forum" :key="index">
+        <i id="icon" :class="item.icon"></i>
         <a href="#">
-          <h3>News e Comunity</h3>
-        </a>
-      </div>
-      <div>
-        <i class="fa-brands fa-apple icon"></i>
-        <a href="#">
-          <h3>Apple Forum</h3>
-        </a>
-      </div>
-      <div>
-        <i class="fa-brands fa-microsoft icon"></i>
-        <a href="#">
-          <h3>Microsoft Forum</h3>
-        </a>
-      </div>
-      <div>
-        <i class="fa-brands fa-android icon"></i>
-        <a href="#">
-          <h3>Android forum</h3>
-        </a>
-      </div>
-      <div>
-        <i class="fa-solid fa-mug-saucer icon"></i>
-        <a href="#">
-          <h3>General Discussion</h3>
-        </a>
-      </div>
-      <div>
-        <i class="fa-solid fa-cubes icon"></i>
-        <a href="#">
-          <h3>Apps e software</h3>
-        </a>
-      </div>
-      <div>
-        <i class="fa-solid fa-laptop icon"></i>
-        <a href="#">
-          <h3>Gadgets e Stuff</h3>
-        </a>
-      </div>
-      <div>
-        <i class="fa-solid fa-wrench icon"></i>
-        <a href="#">
-          <h3>Tutorials e Guides</h3>
+          <h3>{{ item.title }}</h3>
         </a>
       </div>
     </div>
@@ -236,10 +132,20 @@
 </template>
 
 <script>
+import news1 from "../assets/data/mainNewsData1.js";
+import news2 from "../assets/data/mainNewsData2.js";
+import tutorial from "../assets/data/tutorialData.js";
+import forum from "../assets/data/forumLinkData.js";
+
 export default {
   name: "MainComponent",
-  props: {
-    principalNews: Array,
+  data() {
+    return {
+      news1,
+      news2,
+      tutorial,
+      forum,
+    };
   },
 };
 </script>
